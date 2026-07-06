@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0714;
+  background-image: radial-gradient(circle at 15% 0%, rgba(139, 92, 246, 0.16), transparent 55%),
+    radial-gradient(circle at 85% 30%, rgba(217, 70, 239, 0.12), transparent 55%);
+  background-attachment: fixed;
+  color: #ede9f7;
+  font-family: "Sora", sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #8b5cf6;
+  color: #0b0714;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #150f24;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8b5cf6, #d946ef);
+  border-radius: 4px;
+}
+
+.axis-label {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #6b5b8a;
+}
+
+.gradient-text {
+  background-image: linear-gradient(135deg, #a78bfa 0%, #e879f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-glass {
+  background: linear-gradient(180deg, rgba(27, 19, 48, 0.8), rgba(21, 15, 36, 0.6));
+  border: 1px solid rgba(139, 92, 246, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
