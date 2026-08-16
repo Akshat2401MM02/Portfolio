@@ -19,7 +19,7 @@ export const education = [
 
 export const skills = {
   Languages: ["C++", "Python", "JavaScript"],
-  Web: ["React.js", "HTML", "CSS", "MongoDB", "Express.js", "Rest API"],
+  Web: ["React.js", "HTML", "CSS", "MongoDB", "Express.js", "RestAPI"],
   Tools: ["NumPy", "Pandas", "Scikit-learn", "Git"],
   Core: ["DSA", "OOP", "ML Fundamentals"],
 };

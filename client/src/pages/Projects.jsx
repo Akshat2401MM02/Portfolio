@@ -35,27 +35,36 @@ export default function Projects() {
       {status === "ready" && (
         <div className="grid sm:grid-cols-2 gap-6">
           {projects.map((p, i) => (
-            <Card key={p._id} delay={i * 0.08} className="flex flex-col">
-              <div className="flex items-start justify-between gap-3 mb-3">
-                <h3 className="font-mono text-lg text-lavender">{p.title}</h3>
-                <span className="axis-label whitespace-nowrap">{p.status}</span>
-              </div>
-              <p className="text-lavender/80 text-sm leading-relaxed mb-4 flex-1">{p.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {p.stack?.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-xs font-mono px-2 py-1 rounded border border-violet/30 text-violet"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              {p.link && (
-                <Button href={p.link} variant="outline" className="self-start !px-4 !py-2 text-xs">
-                  View Code
-                </Button>
+            <Card key={p._id} delay={i * 0.08} className="flex flex-col !p-0 overflow-hidden">
+              {p.image && (
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-44 object-cover border-b border-violet/20"
+                />
               )}
+              <div className="p-6 flex flex-col flex-1">
+                <div className="flex items-start justify-between gap-3 mb-3">
+                  <h3 className="font-mono text-lg text-lavender">{p.title}</h3>
+                  <span className="axis-label whitespace-nowrap">{p.status}</span>
+                </div>
+                <p className="text-lavender/80 text-sm leading-relaxed mb-4 flex-1">{p.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {p.stack?.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-xs font-mono px-2 py-1 rounded border border-violet/30 text-violet"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                {p.link && (
+                  <Button href={p.link} variant="outline" className="self-start !px-4 !py-2 text-xs">
+                    View Code
+                  </Button>
+                )}
+              </div>
             </Card>
           ))}
         </div>

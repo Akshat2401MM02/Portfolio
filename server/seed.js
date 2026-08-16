@@ -14,6 +14,7 @@ const projects = [
       "Full-stack MERN app to track internship applications and deadlines, with JWT auth, CRUD for applications, and an AI-powered resume-tailoring feature (Gemini API) with a chat interface and PDF export.",
     status: "Complete",
     link: "https://github.com/Akshat2401MM02/Internship-Tracker.git",
+    image: "/projects/internship-tracker.png",
     order: 1,
   },
   {
@@ -22,6 +23,8 @@ const projects = [
     description:
       "Visualization dashboard using reusable React components to track coding progress and performance across problems solved.",
     status: "Complete",
+    link: "https://github.com/Akshat2401MM02/LeetCode-Progress-Tracker",
+    image: "/projects/leetcode-tracker.png",
     order: 2,
   },
   {
@@ -30,6 +33,8 @@ const projects = [
     description:
       "Heart disease prediction model built with Scikit-learn, including feature engineering and model evaluation.",
     status: "Complete",
+    link: "https://github.com/Akshat2401MM02/Heart-Disease-Detection",
+    image: "/projects/heart-disease-detection.jpg",
     order: 3,
   },
   {
@@ -38,6 +43,8 @@ const projects = [
     description:
       "Browser-based examination system with automated score calculation and timer-based assessments.",
     status: "Complete",
+    link: "https://github.com/Akshat2401MM02/exam-platform-",
+    image: "/projects/online-exam-platform.jpg",
     order: 4,
   },
 ];
